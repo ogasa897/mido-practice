@@ -1,7 +1,7 @@
 # note_onとnote_offでそれぞれ順番が違っても大丈夫か実験
 # 大丈夫だった
 # MetaMessageの位置がずれていても正しく動くか実験
-# 
+# 正しく動いた
 # この状態のmidファイルのMessage,MetaMessageの順番は入れたままなのか調整されるのか実験
 # 順番は入れた順番のままだった
 import mido
