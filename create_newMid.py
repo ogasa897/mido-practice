@@ -17,16 +17,3 @@ track.append(Message('note_off', note=60, velocity=64, time = 1920))
 
 # MidiFileを保存
 mid.save('test.mid') # saveメソッドを呼び出してファイルを保存できます
-
-MidiFile(
-    type=1, 
-    ticks_per_beat=480, 
-    tracks=[
-        MidiTrack([
-            MetaMessage('set_tempo', tempo=500000, time=0),
-            Message('note_on', channel=0, note=60, velocity=100, time=0),
-            Message('note_off', channel=0, note=60, velocity=64, time=1920),
-            MetaMessage('end_of_track', time=0)
-        ])
-    ]
-)
