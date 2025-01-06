@@ -1,5 +1,3 @@
-# mido
-
 ## 概要
 pythonのmidiを扱うことができるライブラリ
 
@@ -68,9 +66,13 @@ track2 = MidiTrack()
 mid.tracks.append(track2)
 ```
 
+- GPTにクラスとユーティリティ関数を説明してもらった
+>  [ChatGPT - MidiTrack クラスの解説](https://chatgpt.com/share/67695e04-e1e4-8009-8234-af16baf07e55)
 ### Message
 #### program_change
 - 使用する楽器音色（プログラム）を指定する
+- 音色は128種類ある
+- 参考：[General MIDI - Wikipedia](https://ja.wikipedia.org/wiki/General_MIDI)
 ```python
 track.append(Message('program_change', program=12, time=0))
 ```
@@ -119,3 +121,10 @@ track.appned(MetaMessage('track_name', name='piano1', time=0))
 ```python
 track.append(MetaMessage('end_of_track', time=0))
 ```
+
+### リンク
+- 公式ドキュメント
+	- [Mido - MIDI Objects for Python — Mido 1.3.4.dev6+ga0158ff documentation](https://mido.readthedocs.io/en/latest/index.html)
+- Qiitaのよかった記事
+	-  [MIDIのnote編集に関する基本tips【Python, mido】 #Python - Qiita](https://qiita.com/kokuren333/items/4ff17a2996b8003b665b)
+	- [Midoを使ってPythonでMIDIを扱ってみよう #mido - Qiita](https://qiita.com/tjsurume/items/75a96381fd57d5350971)
